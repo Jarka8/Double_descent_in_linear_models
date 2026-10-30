@@ -14,7 +14,8 @@ def generate_synthetic_data(n_train=200, n_test=2000, d=200, noise_std=0.5, rng=
     y = X beta + noise
     noise ~ N(0, noise_std^2), noise_std = 0.5 by default
     """
-    rng = np.random.default_rng(seed) 
+    if rng is None:
+        rng = np.random.default_rng(seed) 
     
     beta = rng.standard_normal(d)
     beta /= np.linalg.norm(beta) 

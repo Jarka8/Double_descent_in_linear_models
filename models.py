@@ -10,12 +10,6 @@ def mse(y_true, y_pred):
     return float(np.mean((np.ravel(y_true) - np.ravel(y_pred)) ** 2))
 
 
-def condition_number(X):
-    """ ratio of the largest to the smallest value 
-    it peaks near d = n """
-    return float(np.linalg.cond(X))
-
-
 class LinearRegression:
     """
     Linear regression (ordinary least squares)

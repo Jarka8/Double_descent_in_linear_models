@@ -4,7 +4,7 @@ Double Descent Experiments
 
 import numpy as np
 import matplotlib.pyplot as plt
-from models import mse, condition_number, LinearRegression, RidgeRegression
+from models import mse, LinearRegression, RidgeRegression
 from data_loading import (generate_synthetic_data, random_fourier_features,
                             load_california_data, save_figure)
 
@@ -146,6 +146,6 @@ def run_noise_and_bias_variance():
 
 
 if __name__ == "__main__":
-    #run_synthetic()
+    run_synthetic()
     run_real()
-    #run_noise_and_bias_variance()
+    run_noise_and_bias_variance()
