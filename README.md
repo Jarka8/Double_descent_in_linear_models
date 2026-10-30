@@ -1,5 +1,8 @@
 # Double Descent in Linear Models
 
+Author: Jaroslava Adamová (Università degli Studi di Milano)
+Course: Statistical Methods for Machine Learning 
+
 ## Overview
 
 This project investigates the double-descent phenomenon in linear regression, exploring how model complexity affects generalisation performance in under-parameterized and over-parameterized settings.
